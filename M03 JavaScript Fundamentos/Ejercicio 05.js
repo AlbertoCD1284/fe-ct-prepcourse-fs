@@ -42,36 +42,54 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
+   return ('hola' + ' ' + nombre + '!' );
 }
+console.log(obtenerSaludo('Beto'));
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+   return ('El area del rectangulo es: ' + (alto * ancho));
 }
+console.log(obtenerAreaRectangulo(5, 2));
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
+   return ('El perimetro del area es: ' + lado*4);
 }
+console.log(retornarPerimetro(5));
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
+   return ('El area del triangulo es: ' + ((base * altura) / 2));
 }
+console.log(areaDelTriangulo(5, 2));
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
+   return (euro + ' euros, son igual a ' + (euro * 1.2) + ' dolares');
 }
+console.log(deEuroAdolar(100));
 
 function esVocal(letra) {
    // Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if (['a', 'e', 'i', 'o', 'u'].includes(letra.toLowerCase())) {
+      return true;
+   }else{
+      return false;
+   }
 }
+console.log(esVocal('a'));
+console.log(esVocal('A'));
+console.log(esVocal('j'));
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

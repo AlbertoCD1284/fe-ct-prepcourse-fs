@@ -7,7 +7,6 @@
 // Crea una variable de tipo string.
 const nuevoString = 'Alberto';
 console.log(nuevoString)
-// VAMOS A VER COMO QUEDA ESTE CAMBIO
 
 // Crea una variable de tipo number.
 const nuevoNumero = 1284;
