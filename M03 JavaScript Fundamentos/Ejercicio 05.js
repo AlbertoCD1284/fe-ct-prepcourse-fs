@@ -8,19 +8,35 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
+   if (num > 0) {
+      return 'Es positivo';
+   }else{
+      if (num < 0) {
+         return 'Es negativo';
+      } else {
+         return false;
+      }
+   }
 }
+console.log(esPositivo(5));
+console.log(esPositivo(-5));
+console.log(esPositivo(0));
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
+   return str + '!';
 }
+console.log(agregarSimboloExclamacion('Hola Mundo'));
 
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
+   return (nombre + ' ' + apellido);
 }
+console.log(combinarNombres('Alberto', 'Collazos'));
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
